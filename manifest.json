@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Enterprise Entity Highlighter",
+  "version": "1.0.0",
+  "description": "Scans pages for entity IDs and 8-digit numbers, providing data tooltips via an API layer.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Entity Scanner Settings"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["apiClient.js", "contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

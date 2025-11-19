@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 200px; font-family: sans-serif; padding: 10px; }
+    h3 { margin: 0 0 10px 0; font-size: 16px; }
+    p { font-size: 12px; color: #666; }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { background: #0056b3; }
+    .note { margin-top: 10px; font-size: 11px; color: #888; border-top: 1px solid #eee; padding-top: 5px; }
+  </style>
+</head>
+<body>
+  <h3>Entity Scanner</h3>
+  <p>Detected entities are highlighted.</p>
+  <button id="btnRescan">Re-scan Page</button>
+  <div class="note">Mode: Mock API</div>
+  <script src="popup.js"></script>
+</body>
+</html>

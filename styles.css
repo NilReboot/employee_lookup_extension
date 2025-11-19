@@ -1,0 +1,104 @@
+/* Highlight Style */
+.ext-entity-highlight {
+    background-color: #e6f2ff; /* Light blue */
+    border-bottom: 2px solid #007bff;
+    cursor: help;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+}
+
+.ext-entity-highlight:hover {
+    background-color: #cce5ff;
+}
+
+/* Tooltip Card Container */
+.ext-entity-tooltip {
+    display: none;
+    position: absolute;
+    width: 260px;
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    z-index: 2147483647; /* Max Z-Index */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    color: #333;
+}
+
+/* Tooltip Header */
+.ext-tooltip-header {
+    background-color: #f7f7f9;
+    padding: 8px 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    border-radius: 6px 6px 0 0;
+    color: #2c3e50;
+}
+
+/* Tooltip Body */
+.ext-tooltip-body {
+    padding: 10px 12px;
+}
+
+/* Fields */
+.ext-field {
+    margin-bottom: 4px;
+}
+
+.ext-label {
+    color: #777;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.ext-field-footer {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    color: #999;
+    text-align: right;
+}
+
+/* Status Badge */
+.ext-status-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    background: #eee;
+    color: #555;
+    font-weight: 600;
+}
+
+.ext-status-badge[data-status="Active"] { background: #d4edda; color: #155724; }
+.ext-status-badge[data-status="Pending"] { background: #fff3cd; color: #856404; }
+.ext-status-badge[data-status="Closed"] { background: #f8d7da; color: #721c24; }
+
+/* Error State */
+.ext-error {
+    color: #d9534f;
+}
+
+/* Loading Spinner */
+.ext-spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-left-color: #007bff;
+    border-radius: 50%;
+    animation: ext-spin 1s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+@keyframes ext-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
